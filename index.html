@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SK HOME  NEEDS🏠 &mdash; Quality Home Care Products at Affordable Prices</title>
+<meta name="description" content="SudsHome is a local family business selling affordable detergents, cleaners and household essentials. Order easily via WhatsApp or phone call.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="offer-ticker" aria-hidden="true">
+  <div class="offer-ticker-track">
+    <span>🚚&nbsp; Free delivery on orders above ₹299</span>
+    <span>🎉&nbsp; Flat 10% off on your first WhatsApp order</span>
+    <span>🧼&nbsp; Fresh stock of detergents &amp; cleaners every week</span>
+    <span>📍&nbsp; Same-day delivery across the neighbourhood</span>
+    <span>🚚&nbsp; Free delivery on orders above ₹299</span>
+    <span>🎉&nbsp; Flat 10% off on your first WhatsApp order</span>
+    <span>🧼&nbsp; Fresh stock of detergents &amp; cleaners every week</span>
+    <span>📍&nbsp; Same-day delivery across the neighbourhood</span>
+  </div>
+</div>
+
+<header class="site-header" id="siteHeader">
+  <div class="header-inner container">
+    <a href="#home" class="brand" data-nav="home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="34" height="34">
+          <circle cx="24" cy="24" r="24" fill="var(--teal)"/>
+          <path d="M24 10c-1 4-8 10-8 17a8 8 0 0 0 16 0c0-7-7-13-8-17z" fill="#fff"/>
+          <circle cx="19" cy="15" r="2.4" fill="#fff" opacity="0.85"/>
+        </svg>
+      </span>
+      <span class="brand-text">SK HOME NEEDS🏠<small>Home &amp; Cleaning Co.</small></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#home" class="nav-link" data-nav="home">Home</a>
+      <a href="#products" class="nav-link" data-nav="products">Products</a>
+      <a href="#about" class="nav-link" data-nav="about">About Us</a>
+      <a href="#contact" class="nav-link" data-nav="contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search products">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.38 1.41-1.41-5.38-5.39A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
+      </button>
+      <button class="icon-btn cart-toggle" id="cartToggle" aria-label="Open cart">
+        <svg viewBox="0 0 24 24" width="21" height="21"><path fill="currentColor" d="M7 4h-2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 11 19h9v-2h-9l1.1-2h6.45a2 2 0 0 0 1.79-1.11L23 8H8.42l-.94-2H7zM7 20a2 2 0 1 0 0.001 4.001A2 2 0 0 0 7 20zm10 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 17 20z"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="search-bar" id="searchBar">
+    <div class="container search-bar-inner">
+      <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M10 2a8 8 0 1 0 4.9 14.32l5.39 5.38 1.41-1.41-5.38-5.39A8 8 0 0 0 10 2zm0 2a6 6 0 1 1 0 12 6 6 0 0 1 0-12z"/></svg>
+      <input type="text" id="searchInput" placeholder="Search for detergent, mop, dishwash...">
+      <button id="searchClose" aria-label="Close search">&times;</button>
+    </div>
+  </div>
+</header>
+
+<main id="page-home" class="page">
+
+  <section class="hero" id="home">
+    <canvas id="bubbleCanvas" class="bubble-canvas" aria-hidden="true"></canvas>
+    <div class="hero-glow hero-glow-1" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow-2" aria-hidden="true"></div>
+    <div class="hero-inner container">
+      <span class="hero-badge">✨ Trusted by families nearby since day one</span>
+      <h1>Quality Home Care Products at <span class="text-highlight">Affordable Prices</span></h1>
+      <p class="hero-sub">Detergents, dishwash, floor &amp; bathroom cleaners, brooms and more &mdash; everything your home needs, delivered from our local shop to your doorstep.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary btn-lg" data-nav="products">Shop Now</a>
+        <a href="#" id="heroWhatsApp" class="btn btn-whatsapp btn-lg" target="_blank" rel="noopener">
+          <svg viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.37 4 15c0 2.34.66 4.53 1.8 6.4L4 29l7.8-1.75A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3zm0 21.7c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.05.91.87-3.95-.25-.4A9.6 9.6 0 0 1 5.4 15c0-5.86 4.76-10.62 10.62-10.62S26.64 9.14 26.64 15 21.88 24.7 16.02 24.7zm5.83-7.94c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.31 3.32.16.21 2.26 3.45 5.47 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+      <div class="hero-trust">
+        <div><strong>500+</strong><span>Happy households</span></div>
+        <div class="hero-trust-divider"></div>
+        <div><strong>25+</strong><span>Everyday products</span></div>
+        <div class="hero-trust-divider"></div>
+        <div><strong>Same-day</strong><span>Local delivery</span></div>
+      </div>
+    </div>
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,32 C240,80 480,0 720,24 C960,48 1200,88 1440,40 L1440,90 L0,90 Z" fill="var(--paper)"></path>
+    </svg>
+  </section>
+
+  <section class="section categories-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Browse</p>
+        <h2>Popular Categories</h2>
+        <p class="section-sub">Jump straight to what you're running low on.</p>
+      </div>
+      <div class="category-grid reveal" id="categoryGrid"></div>
+    </div>
+  </section>
+
+  <section class="section featured-section">
+    <div class="blob blob-teal" aria-hidden="true"></div>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Fresh picks</p>
+        <h2>Featured Products</h2>
+        <p class="section-sub">Our customers' most-reordered essentials this month.</p>
+      </div>
+      <div class="product-grid reveal" id="featuredGrid"></div>
+      <div class="section-cta reveal">
+        <a href="#products" class="btn btn-outline" data-nav="products">View All Products</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Why SKHome</p>
+        <h2>Why Families Choose Us</h2>
+        <p class="section-sub">The little things that make ordering from us easy.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-card">
+          <div class="why-icon why-icon-1">💰</div>
+          <h3>Honest, Affordable Prices</h3>
+          <p>No middlemen markups &mdash; we price every product fairly for daily household budgets.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon why-icon-2">🚲</div>
+          <h3>Fast Local Delivery</h3>
+          <p>Order in the morning, get it the same day. We know the neighbourhood well.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon why-icon-3">📞</div>
+          <h3>Order in Seconds</h3>
+          <p>Just tap WhatsApp or call &mdash; no app to download, no complicated checkout.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon why-icon-4">🧺</div>
+          <h3>Family-Run, Family-Trusted</h3>
+          <p>We're your neighbours. Every order is packed with care, the way we'd want for our own home.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow">Kind words</p>
+        <h2>What Our Customers Say</h2>
+      </div>
+      <div class="testimonial-grid reveal" id="testimonialGrid"></div>
+    </div>
+  </section>
+
+  <section class="cta-strip">
+    <div class="container cta-strip-inner">
+      <div>
+        <h2>Need something for the house today?</h2>
+        <p>Message us on WhatsApp or call &mdash; we'll have it ready.</p>
+      </div>
+      <div class="cta-strip-actions">
+        <a href="#" id="ctaWhatsApp" class="btn btn-whatsapp" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <a href="#" id="ctaCall" class="btn btn-light">Call Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<main id="page-products" class="page" hidden>
+  <section class="section products-page">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Everything for the home</p>
+        <h2>All Products</h2>
+      </div>
+
+      <div class="products-toolbar">
+        <input type="text" id="productSearchInput" class="toolbar-search" placeholder="Search products...">
+        <div class="filter-chips" id="filterChips"></div>
+      </div>
+
+      <p class="results-info" id="resultsInfo"></p>
+      <div class="product-grid" id="allProductsGrid"></div>
+      <p class="empty-state" id="emptyState" hidden>No products match your search. Try a different keyword or category.</p>
+    </div>
+  </section>
+</main>
+
+<main id="page-about" class="page" hidden>
+  <section class="section about-page">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="eyebrow">Our Story</p>
+        <h2>A Small Family Shop, Serving Our Neighbourhood</h2>
+        <p>SK Home Needs started as a small counter shop selling detergents and cleaning essentials to families in our own neighbourhood. What began with a handful of products has grown into a trusted local stop for everyday home care &mdash; but we've kept the same values: fair prices, honest advice, and fast, friendly service.</p>
+        <p>We personally choose every product on our shelves &mdash; from laundry powders to mops and brushes &mdash; so that every household nearby can keep a clean home without stretching the monthly budget. No corporate call centres, no confusing apps: just message us, and we'll sort it out.</p>
+        <div class="about-stats">
+          <div><strong>10+ yrs</strong><span>Serving the community</span></div>
+          <div><strong>25+</strong><span>Daily-use products</span></div>
+          <div><strong>1-1</strong><span>Personal service</span></div>
+        </div>
+        <a href="#contact" class="btn btn-primary" data-nav="contact">Get in Touch</a>
+      </div>
+      <div class="about-media">
+        <img src="https://placehold.co/560x640/0e7c86/ffffff?text=Our+Shop" alt="Photo of the SHome family shop counter" loading="lazy">
+      </div>
+    </div>
+  </section>
+</main>
+
+<main id="page-contact" class="page" hidden>
+  <section class="section contact-page">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">We're here to help</p>
+        <h2>Contact Us</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3>Reach Us Directly</h3>
+          <ul class="contact-list">
+            <li>
+              <span class="contact-icon">📍</span>
+              <div>
+                <strong>Address</strong>
+                <p id="contactAddress" >NO.196,Pillayar Kovil Street,Kakkalur Village,Thiruvallur District
+                    pin-602 003.Near Backside Weight Brige
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">📞</span>
+              <div>
+                <strong>Phone</strong>
+                <p><a id="contactPhone" href="tel:+91 9894693228">+91 9894693228</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <p><a id="contactWhatsApp" href="#" target="_blank" rel="noopener">+91 9894693228</a></p>
+              </div>
+            </li>
+            <li>
+              <span class="contact-icon">🕘</span>
+              <div>
+                <strong>Business Hours</strong>
+                <p>Mon &ndash; Sat: 8:00 AM &ndash; 9:00 PM<br>Sunday: 9:00 AM &ndash; 2:00 PM</p>
+              </div>
+            </li>
+          </ul>
+          <div class="map-embed">
+            <iframe
+              title="SK Home Needs location map"
+              src="https://maps.google.com/maps?q=Avadi%2C%20Chennai%2C%20Tamil%20Nadu&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              width="100%" height="230" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <h3>Send Us a Message</h3>
+          <label>
+            Your Name
+            <input type="text" name="name" required placeholder="NAME">
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" required placeholder="PHONE NUMBER">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4" required placeholder="Tell us what you need..."></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <p class="form-note" id="contactFormNote" hidden>Thanks! Your message details are ready &mdash; sending you to WhatsApp to confirm.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <span class="brand-text">SKHome<small>Home &amp; Cleaning Co.</small></span>
+      <p>Affordable, everyday home care products for your family &mdash; ordered in seconds, delivered locally.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#products" data-nav="products">Products</a>
+      <a href="#about" data-nav="about">About Us</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </div>
+    <div class="footer-contact">
+      <h4>Get In Touch</h4>
+      <p id="footerAddress"></p>
+      <p><a id="footerPhone" href="tel:+919894693228">+91 9894693228</a></p>
+      <a href="#" id="footerWhatsApp" class="btn btn-whatsapp btn-small" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; <span id="footerYear"></span> SKHome. Made for our local community.</p>
+  </div>
+</footer>
+
+<a href="#" id="floatingWhatsApp" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 32 32" width="28" height="28"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.37 4 15c0 2.34.66 4.53 1.8 6.4L4 29l7.8-1.75A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3zm0 21.7c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.05.91.87-3.95-.25-.4A9.6 9.6 0 0 1 5.4 15c0-5.86 4.76-10.62 10.62-10.62S26.64 9.14 26.64 15 21.88 24.7 16.02 24.7zm5.83-7.94c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.31 3.32.16.21 2.26 3.45 5.47 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+</a>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="cart-drawer-head">
+    <h3>Your Cart</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close cart">&times;</button>
+  </div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">
+    <p>🧺 Your cart is empty.</p>
+    <a href="#products" class="btn btn-outline" data-nav="products" id="cartEmptyShop">Browse Products</a>
+  </div>
+  <div class="cart-drawer-foot" id="cartFoot" hidden>
+    <div class="cart-total-row">
+      <span>Total</span>
+      <strong id="cartTotal">₹0</strong>
+    </div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Proceed to Checkout</button>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <div class="modal-head">
+      <h3 id="checkoutTitle">Checkout</h3>
+      <button class="icon-btn" id="checkoutClose" aria-label="Close checkout">&times;</button>
+    </div>
+    <form id="checkoutForm" class="checkout-form">
+      <label>
+        Full Name
+        <input type="text" id="checkoutName" required placeholder="Your name">
+      </label>
+      <label>
+        Phone Number
+        <input type="tel" id="checkoutPhone" required placeholder="Your phone number">
+      </label>
+      <label>
+        Delivery Address
+        <textarea id="checkoutAddress" rows="3" required placeholder="House no., street, area, landmark"></textarea>
+      </label>
+
+      <div class="order-summary">
+        <h4>Order Summary</h4>
+        <div id="checkoutSummary"></div>
+        <div class="order-summary-total">
+          <span>Total</span>
+          <strong id="checkoutTotal">₹0</strong>
+        </div>
+      </div>
+
+      <button type="submit" class="btn btn-whatsapp btn-block">
+        <svg viewBox="0 0 32 32" width="18" height="18"><path fill="currentColor" d="M16.02 3C9.4 3 4 8.37 4 15c0 2.34.66 4.53 1.8 6.4L4 29l7.8-1.75A11.9 11.9 0 0 0 16.02 27C22.63 27 28 21.63 28 15S22.63 3 16.02 3zm0 21.7c-1.98 0-3.83-.55-5.4-1.5l-.39-.23-4.05.91.87-3.95-.25-.4A9.6 9.6 0 0 1 5.4 15c0-5.86 4.76-10.62 10.62-10.62S26.64 9.14 26.64 15 21.88 24.7 16.02 24.7zm5.83-7.94c-.32-.16-1.9-.94-2.19-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.26-.19.21-.37.24-.69.08-.32-.16-1.36-.5-2.6-1.6-.96-.86-1.61-1.92-1.8-2.24-.19-.32-.02-.5.14-.66.14-.14.32-.37.48-.55.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.1-1.12 2.68 0 1.58 1.15 3.1 1.31 3.32.16.21 2.26 3.45 5.47 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.39.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
+        Place Order via WhatsApp
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script src="web.js"></script>
+</body>
+</html>
