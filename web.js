@@ -7,7 +7,7 @@ const CONFIG = {
   businessName: " SK HOME NEEDS🏠",
   phoneNumber: "+919894693228",
   whatsappNumber: "919894693228",
-  address: "NO. 196, Pillayar Kovil Street, Kakkalur Village, Thiruvallur  District,pin - 602003 Near Backside Weight Brdige ",
+  address: "No 196.4WQH+83V, Arasadi Pillaiyar Kovil Street, Kakkalur,thiruvallur, Tamil Nadu 602003, India",
   currencySymbol: "₹",
 };
 
